@@ -14,7 +14,7 @@ _$_QiitaArticle _$_$_QiitaArticleFromJson(Map<String, dynamic> json) {
         ? null
         : QiitaUser.fromJson(json['user'] as Map<String, dynamic>),
     tags: json['tags'] as List<dynamic>?,
-    createdAt: json['createdAt'] as String?,
+    createdAt: json['created_at'] as String?,
   );
 }
 
@@ -24,5 +24,5 @@ Map<String, dynamic> _$_$_QiitaArticleToJson(_$_QiitaArticle instance) =>
       'url': instance.url,
       'user': instance.user,
       'tags': instance.tags,
-      'createdAt': instance.createdAt,
+      'created_at': instance.createdAt,
     };

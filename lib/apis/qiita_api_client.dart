@@ -2,8 +2,8 @@ import 'package:dio/dio.dart';
 
 import 'package:qiita_app_with_riverpod/models/qiita_article.dart';
 
-class QiitaAppClient {
-  dynamic fetachArticles(int page, String keyword) async {
+class QiitaApiClient {
+  dynamic fetchArticles(int page, String keyword) async {
     final response = await Dio().get(
       'https://qiita.com/api/v2/items?page=1&per_page=20',
       queryParameters: {

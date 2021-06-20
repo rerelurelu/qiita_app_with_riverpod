@@ -25,7 +25,7 @@ class _$QiitaArticleTearOff {
       String? url,
       QiitaUser? user,
       List<dynamic>? tags,
-      @JsonKey(name: created_at) String? createdAt}) {
+      @JsonKey(name: 'created_at') String? createdAt}) {
     return _QiitaArticle(
       title: title,
       url: url,
@@ -49,7 +49,7 @@ mixin _$QiitaArticle {
   String? get url => throw _privateConstructorUsedError;
   QiitaUser? get user => throw _privateConstructorUsedError;
   List<dynamic>? get tags => throw _privateConstructorUsedError;
-  @JsonKey(name: created_at)
+  @JsonKey(name: 'created_at')
   String? get createdAt => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -68,7 +68,7 @@ abstract class $QiitaArticleCopyWith<$Res> {
       String? url,
       QiitaUser? user,
       List<dynamic>? tags,
-      @JsonKey(name: created_at) String? createdAt});
+      @JsonKey(name: 'created_at') String? createdAt});
 
   $QiitaUserCopyWith<$Res>? get user;
 }
@@ -137,7 +137,7 @@ abstract class _$QiitaArticleCopyWith<$Res>
       String? url,
       QiitaUser? user,
       List<dynamic>? tags,
-      @JsonKey(name: created_at) String? createdAt});
+      @JsonKey(name: 'created_at') String? createdAt});
 
   @override
   $QiitaUserCopyWith<$Res>? get user;
@@ -194,7 +194,7 @@ class _$_QiitaArticle implements _QiitaArticle {
       this.url,
       this.user,
       this.tags,
-      @JsonKey(name: created_at) this.createdAt});
+      @JsonKey(name: 'created_at') this.createdAt});
 
   factory _$_QiitaArticle.fromJson(Map<String, dynamic> json) =>
       _$_$_QiitaArticleFromJson(json);
@@ -208,7 +208,7 @@ class _$_QiitaArticle implements _QiitaArticle {
   @override
   final List<dynamic>? tags;
   @override
-  @JsonKey(name: created_at)
+  @JsonKey(name: 'created_at')
   final String? createdAt;
 
   @override
@@ -259,7 +259,7 @@ abstract class _QiitaArticle implements QiitaArticle {
       String? url,
       QiitaUser? user,
       List<dynamic>? tags,
-      @JsonKey(name: created_at) String? createdAt}) = _$_QiitaArticle;
+      @JsonKey(name: 'created_at') String? createdAt}) = _$_QiitaArticle;
 
   factory _QiitaArticle.fromJson(Map<String, dynamic> json) =
       _$_QiitaArticle.fromJson;
@@ -273,7 +273,7 @@ abstract class _QiitaArticle implements QiitaArticle {
   @override
   List<dynamic>? get tags => throw _privateConstructorUsedError;
   @override
-  @JsonKey(name: created_at)
+  @JsonKey(name: 'created_at')
   String? get createdAt => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
